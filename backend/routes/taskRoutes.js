@@ -1,0 +1,1 @@
+const express = require('express'); const { getTasks, addTask, deleteTask, toggleTask } = require('../controllers/itemController'); const router = express.Router(); router.get('/', getTasks); router.post('/', addTask); router.delete('/:id', deleteTask); router.patch('/:id', toggleTask); module.exports = router;
